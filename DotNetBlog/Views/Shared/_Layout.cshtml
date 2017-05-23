@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type = 'text/javascript' >
+        var appInsights=window.appInsights||function(config)
+        {
+            function r(config){ t[config] = function(){ var i = arguments; t.queue.push(function(){ t[config].apply(t, i)})} }
+            var t = { config:config},u=document,e=window,o='script',s=u.createElement(o),i,f;for(s.src=config.url||'//az416426.vo.msecnd.net/scripts/a/ai.0.js',u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=['Event','Exception','Metric','PageView','Trace','Ajax'];i.length;)r('track'+i.pop());return r('setAuthenticatedUserContext'),r('clearAuthenticatedUserContext'),config.disableExceptionTracking||(i='onerror',r('_'+i),f=e[i],e[i]=function(config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o),s}),t
+        }({
+            instrumentationKey:'9e9fd1da-5dba-4761-8c98-b332418817b8'
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+<body>
+    <div class="top_bar">
+        <!-- top_bar -->
+        <div class="min_top_bar">
+            <!-- min_top_bar -->
+            <div class="container">
+                <div class="top_nav">
+                    <!-- top_nav -->
+                    <ul>
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Blog", "Index", "Blog")</li>
+                    </ul>
+                </div><!-- // top_nav -->
+
+                <div id="top_search_ico">
+                    <!-- top_search_ico -->
+                    <div class="top_search">
+                        <form method="get"><input type="text" placeholder="Buscar..."></form>
+                        <i class="fa fa-search search-desktop"></i>
+                    </div>
+
+                    <div id="top_search_toggle">
+                        <div id="search_toggle_top">
+                            <form method="get"><input type="text" placeholder="Search and hit enter..."></form>
+                        </div>
+                        <i class="fa fa-search search-desktop"></i>
+                    </div>
+                </div><!-- // top_search_ico -->
+
+                <div class="social_icon">
+                    <!-- social_icon -->
+                    <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+                    <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+                    <span><a href="#"><i class="fa fa-google-plus"></i></a></span>
+                    <span><a href="#"><i class="fa fa-youtube"></i></a></span>
+                    @*<span><a href="#"><i class="fa fa-dribbble"></i></a></span>
+                        <span><a href="#"><i class="fa fa-behance"></i></a></span>*@
+                    <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+                    @*<span><a href="#"><i class="fa fa-vimeo-square"></i></a></span>*@
+                    <span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+                </div><!-- // social_icon -->
+
+            </div>
+            @Html.Partial("_LoginPartial")
+
+
+        </div><!-- // min_top_bar -->
+    </div>
+   
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+</div>
+    
+<div id="footer" class="footer container-fulid"><!-- footer -->
+    <footer class="main_footer"><!-- main_footer -->
+        <div class="container">
+            <div class="row">
+								
+                <div class="col-sm-4"><!-- start first footer widget area -->
+                    <div id="text-3" class="widget widget_text"><!-- widget_text -->
+                        <h4 class="widget_title">Text Widget</h4>
+                        <div class="logo_widget">
+                            <a href="#"><img src="img/news/footer_news_logo.png" alt="Logo" class="hz_appear"></a>
+                        </div>
+                        <div class="textwidget">
+                            Here you can add any Here you can add any text or html snippet. Good for showing some small info or about your site.
+                            text or html snippet. can add any text or html snippet.Good for showing some can add any text or html snippet. Good for showing small info or about your site.
+                        </div>
+                    </div>	<!-- // widget_text -->
+                </div><!-- end first footer widget area -->
+
+                <div class="col-sm-4"><!-- start third footer widget area -->
+                    <div class="widget widget_recent_post"><!-- Start widget recent post -->
+                        <h4 class="widget_title">Recent Post</h4>
+                        <ul class="recent_post">
+                            <li>
+                                <figure class="widget_post_thumbnail">
+                                    <a href="#"><img src="img/news/world/3.jpg" height="80" width="80" alt="Appropriately simplify quality imperatives" class="hz_appear"></a>
+                                </figure>
+                                <div class="widget_post_info">
+                                    <h5><a href="#">Appropriately simplify quality imperatives</a></h5>
+                                    <div class="post_meta">
+                                        <span><a href="#"><i class="fa fa-comments-o"></i> 0 comments</a></span>
+                                        <span class="date_meta"><a href="#"><i class="fa fa-calendar"></i> Mar 10, 2015</a></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <figure class="widget_post_thumbnail">
+                                    <a href="#"><img src="img/news/world/1.jpg" height="80" width="80" alt="Appropriately simplify quality imperatives" class="hz_appear"></a>
+                                </figure>
+                                <div class="widget_post_info">
+                                    <h5><a href="#">Appropriately simplify quality imperatives</a></h5>
+                                    <div class="post_meta">
+                                        <span><a href="#"><i class="fa fa-comments-o"></i> 0 comments</a></span>
+                                        <span class="date_meta"><a href="#"><i class="fa fa-calendar"></i> Mar 10, 2015</a></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <figure class="widget_post_thumbnail">
+                                    <a href="#"><img src="img/news/world/2.jpg" height="80" width="80" alt="Appropriately simplify quality imperatives" class="hz_appear"></a>
+                                </figure>
+                                <div class="widget_post_info">
+                                    <h5><a href="#">Appropriately simplify quality imperatives</a></h5>
+                                    <div class="post_meta">
+                                        <span><a href="#"><i class="fa fa-comments-o"></i> 0 comments</a></span>
+                                        <span class="date_meta"><a href="#"><i class="fa fa-calendar"></i> Mar 10, 2015</a></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- End widget recent post -->
+                </div><!-- end third footer widget area -->
+
+                <div class="col-sm-4"><!-- start first footer widget area -->
+                    <div class="widget widget_recent_comments"><!--Start widget recent comments -->
+                        <h4 class="widget_title">Recent Comments</h4>
+                        <ul class="recent_post">
+
+                            <li>
+                                <figure class="widget_post_thumbnail">
+                                    <a href="#"><img src="img/news/user/2.jpg" height="80" width="80" alt="Rapidiously coordinate cross-unit communities without" class="hz_appear"></a>
+                                </figure>
+                                <div class="widget_post_info">
+                                    <strong class="comment-author"><a href="#"><i class="fa fa-user"></i> Ashmawi Sami</a></strong>
+                                    <span class="comment-c"><a href="#">Rapidiously coordinate cross-unit communities without </a></span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <figure class="widget_post_thumbnail">
+                                    <a href="#"><img src="img/news/user/1.jpg" height="80" width="80" alt="Rapidiously coordinate cross-unit communities without" class="hz_appear"></a>
+                                </figure>
+                                <div class="widget_post_info">
+                                    <strong class="comment-author"><a href="#"><i class="fa fa-user"></i> Ashmawi Sami</a></strong>
+                                    <span class="comment-c"><a href="#">Rapidiously coordinate cross-unit communities without </a></span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <figure class="widget_post_thumbnail">
+                                    <a href="#"><img src="img/news/user/3.jpg" height="80" width="80" alt="Rapidiously coordinate cross-unit communities without" class="hz_appear"></a>
+                                </figure>
+                                <div class="widget_post_info">
+                                    <strong class="comment-author"><a href="#"><i class="fa fa-user"></i> Ashmawi Sami</a></strong>
+                                    <span class="comment-c"><a href="#">Rapidiously coordinate cross-unit communities without </a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div><!--End widget recent comments -->
+                </div><!-- end first footer widget area -->
+
+            </div>
+        </div>
+    </footer><!-- // main_footer -->
+
+    <div class="copyright"><!-- copyright -->
+        <div class="hmztop" style="bottom: 14px;">Scroll To Top</div><!-- hmztop -->
+        <div class="container">
+            <div class="social_icon"><!-- social_icon -->
+                <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fa fa-google-plus"></i></a></span>
+                <span><a href="#"><i class="fa fa-youtube"></i></a></span>
+                <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+                <span><a href="#"><i class="fa fa-skype"></i></a></span>
+                <span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+            </div><!-- // social_icon -->
+            <p>Copyrights © @DateTime.Now.Year All Rights Reserved by <a href="#">Daniel Villamizar</a></p>
+        </div>
+    </div><!-- // copyright -->
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

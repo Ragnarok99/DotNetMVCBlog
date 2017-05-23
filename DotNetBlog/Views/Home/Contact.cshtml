@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<div class="main_page about_me col-md-8"><!-- main_page about_me -->
+    <div class="row">
+
+        <div class="post_header"><!-- post_header -->
+            <h1>Contact Me</h1>
+            <span class="title_divider"></span>
+        </div><!-- // post_header -->
+
+        <div class="about_content"><!-- about_content -->
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+        </div><!-- // about_content -->
+
+        <div class="comment-form"><!-- comment-form -->
+            <form method="post" class="form-js" action="contact_us.php">
+                <div class="form-input">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-input">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="mail" id="mail" placeholder="Email">
+                </div>
+                <div class="form-input">
+                    <i class="fa fa-home"></i>
+                    <input type="url" name="url" id="url" placeholder="URL">
+                </div>
+                <div class="form-input">
+                    <i class="fa fa-comment"></i>
+                    <textarea placeholder="Message" name="message" id="message"></textarea>
+                </div>
+                <input type="submit" class="button" value="Send Message"></form>
+        </div><!-- // comment-form -->
+    </div>
+</div>
